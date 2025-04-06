@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ================== HEADER ================== */
+
+.nav-link {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.8), transparent);
+  transition: width 0.4s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ================== GLOSSY BUTTON ================== */
+
+.glossy-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.glossy-button::before,
+.glossy-button::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  transform: translateX(-50%);
+  transition: all 0.5s ease-in-out;
+}
+
+.glossy-button::before {
+  border-right: none;
+  border-top: none;
+}
+
+.glossy-button::after {
+  border-left: none;
+  border-top: none;
+}
+
+.glossy-button:hover::before {
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-bottom-color: transparent;
+  border-left-color: rgba(255, 255, 255, 0.9);
+  border-image: linear-gradient(to top left, rgba(255, 255, 255, 0.9), transparent) 1;
+}
+
+.glossy-button:hover::after {
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-bottom-color: transparent;
+  border-right-color: rgba(255, 255, 255, 0.9);
+  border-image: linear-gradient(to top right, rgba(255, 255, 255, 0.9), transparent) 1;
+}
+
+.glossy-button:hover::before,
+.glossy-button:hover::after {
+  border-top-color: rgba(255, 255, 255, 0.9);
+}
+
+/* ================== HERO SECTION ================== */
+
+/* Headline Animation */
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subheading Animation */
+.animate-fade-in-delayed {
+  animation: fadeInDelayed 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInDelayed {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button Animation (Fade Up) */
+.animate-fade-up {
+  animation: fadeUp 1s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
