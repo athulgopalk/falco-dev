@@ -3,6 +3,26 @@
 html,
 body {
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("/falco-bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px); 
+  background-color: rgba(0, 0, 0, 0.9); 
+  z-index: -1;
 }
 
 /* ================== HEADER ================== */
@@ -129,4 +149,30 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+/* hero section text */
+
+@keyframes luxFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); /* Start from 30px below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at normal position */
+  }
+}
+
+.animate-lux-fade-in {
+  animation: luxFadeIn 1.4s ease-out both;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
 }

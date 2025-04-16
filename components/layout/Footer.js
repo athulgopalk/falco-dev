@@ -1,7 +1,7 @@
 // components/Footer.js
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-t from-gray-900/80 to-transparent py-6 fixed bottom-0 w-full">
+    <footer className="bg-gradient-to-t from-gray-900/80 to-transparent py-6  bottom-0 w-full">
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
         <div className="text-white text-lg font-semibold">
           Falco Industries Pvt Ltd

@@ -10,11 +10,11 @@ export default function Header() {
         <div className="flex items-center">
           <Link href="/" aria-label="Falco Industries Home">
             <div className="w-12 h-12 bg-white flex items-center justify-center rounded-full">
-              <Image src="/logo.png" className="text-white font-bold text-lg p-1" width={90} height={20} alt="falco industries logo"/>
+              <Image src="/logo-svg.svg" className="text-white font-bold text-lg p-1" width={90} height={20} alt="falco industries logo"/>
             </div>
           </Link>
           <span className="ml-3 text-white text-lg font-semibold">
-            Falco Industries
+            FALCO INDUSTRIES
           </span>
         </div>
 
