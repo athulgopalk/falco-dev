@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Hero() {
   const [currentImage, setCurrentImage] = useState(0);
   const [mounted, setMounted] = useState(false);
-  const images = ["/standing.jpg", "/vrf-1.jpg", "/casate-ac.jpg"];
+  const images = ["/casate-ac.jpg", "/standing.jpg ", "/vrf-1.jpg"];
 
   useEffect(() => {
     setMounted(true); 

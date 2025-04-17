@@ -1,6 +1,7 @@
 // components/WhatWeDo.jsx
 import Image from "next/image";
 
+
 // Base64-encoded placeholder image (a 1x1 gray pixel)
 const placeholderImage =
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg==";
@@ -13,7 +14,7 @@ export const WhatWeDo = () => {
         {/* Images */}
         <div className="md:w-3/5 relative h-[90vh]  ">
           <Image
-            src={placeholderImage}
+            src="/whyus/whychooseus1.jpg"
             alt="HVAC Solutions by Falco Industries"
             width={400}
             height={300}
@@ -21,7 +22,7 @@ export const WhatWeDo = () => {
             priority={true}
           />
           <Image
-            src={placeholderImage}
+            src="/whyus/whychooseus2.jpg"
             alt="Air Conditioning Sales at Falco Industries"
             width={400}
             height={300}
@@ -29,7 +30,7 @@ export const WhatWeDo = () => {
             priority={true}
           />
           <Image
-            src={placeholderImage}
+            src="/whyus/whychooseus3.jpg"
             alt="Contracting and Installation Services by Falco Industries"
             width={600}
             height={400}
@@ -59,14 +60,14 @@ export const WhatWeDo = () => {
         {/* Images */}
         <div className="md:w-3/5 relative h-[600px]">
           <Image
-            src={placeholderImage}
+            src="/whyus/maintainence.jpg"
             alt="Custom HVAC Solutions for Commercial and Residential Clients"
             width={400}
             height={300}
             className="absolute top-0 right-10 w-80 h-56 object-cover rounded-lg bg-gray-300 z-10 shadow-md hover:z-20 transition-all duration-300 hover:scale-105"
           />
           <Image
-            src={placeholderImage}
+            src="/whyus/commercial.jpg"
             alt="Premium Air Conditioning Units for Sale"
             width={400}
             height={300}
@@ -140,3 +141,4 @@ export const WhatWeDo = () => {
     </div>
   );
 };
+

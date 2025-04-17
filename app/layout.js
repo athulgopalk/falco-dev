@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import "./globals.css";
+import HeaderWrapper from "@/components/layout/HeaderWrapper";
 
 // Configure Poppins font with optimization
 const poppins = Poppins({
@@ -86,7 +87,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppins.variable} antialiased min-h-screen flex flex-col`}
       >
-        <Header />
+        <HeaderWrapper/>
         <main className="flex-grow">{children}</main>
         <Footer />
       </body>
