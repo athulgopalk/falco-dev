@@ -74,7 +74,7 @@ export const WhatWeDo = () => {
             className="absolute top-40 right-89 w-96 h-64 object-cover rounded-lg bg-gray-300 z-0 shadow-md hover:z-20 transition-all duration-300 hover:scale-105"
           />
           <Image
-            src={placeholderImage}
+            src="/whyus/expertise3.jpg"
             alt="Professional HVAC Installation Services"
             width={600}
             height={400}
@@ -102,21 +102,21 @@ export const WhatWeDo = () => {
         {/* Images */}
         <div className="md:w-3/5 relative h-[600px]">
           <Image
-            src={placeholderImage}
+            src="/whyus/wcu1.jpg"
             alt="Energy-Efficient HVAC Systems by Falco Industries"
             width={400}
             height={300}
             className="absolute top-0 left-10 w-80 h-56 object-cover rounded-lg bg-gray-300 z-10 shadow-md hover:z-20 transition-all duration-300 hover:scale-105"
           />
           <Image
-            src={placeholderImage}
+            src="/whyus/wcu2.jpg"
             alt="Top-Quality Air Conditioning Products for All Needs"
             width={400}
             height={300}
             className="absolute top-40 left-88 w-96 h-64 object-cover rounded-lg bg-gray-300 z-0 shadow-md hover:z-20 transition-all duration-300 hover:scale-105"
           />
           <Image
-            src={placeholderImage}
+            src="/whyus/wcu3.jpg"
             alt="Expert HVAC Contracting and Installation in Qatar, UAE, and India"
             width={600}
             height={400}

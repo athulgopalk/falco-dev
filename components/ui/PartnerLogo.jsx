@@ -25,7 +25,7 @@ const PartnerLogo = ({ logoSrc, alt, index, isInView }) => {
 
   return (
     <motion.div
-      className="relative w-44 h-22 md:w-52 md:h-26 flex items-center justify-center bg-gray-900/50 rounded-xl border border-[rgba(0,161,214,0.2)]"
+      className="relative w-44 h-22 md:w-52 md:h-26 flex items-center justify-center bg-gray-900/50 rounded-xl border border-[rgba(0,161,214,0.2)] overflow-hidden"
       variants={variants}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
@@ -34,13 +34,13 @@ const PartnerLogo = ({ logoSrc, alt, index, isInView }) => {
         transition: { duration: 0.6, ease: "easeInOut" },
       }}
     >
-      <div className="relative p-4 transition-all duration-600 hover:shadow-[0_0_25px_rgba(0,161,214,0.6)] rounded-lg overflow-hidden">
+      <div className="relative p-4 transition-all duration-600 hover:shadow-[0_0_25px_rgba(0,161,214,0.6)] rounded-lg ">
         <Image
           src={logoSrc || placeholderLogo}
           alt={alt}
           width={208}
           height={104}
-          className="w-full h-full object-cover"
+          className="w-full object-cover rounded-lg overflow-hidden"
           priority={true}
           onError={() => console.warn(`Failed to load logo: ${alt}`)}
         />

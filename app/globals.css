@@ -176,3 +176,47 @@ body::before {
 .delay-500 {
   animation-delay: 0.5s;
 }
+
+
+/* about us page */
+
+/* globals.css */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.animate-twinkle {
+  animation: twinkle infinite;
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.animate-typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter 2s steps(40, end) forwards;
+}
+
+.animate-typewriter-delayed {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter 2s steps(40, end) forwards;
+  animation-delay: 0.5s;
+}
+
+
+/* globals.css meet our team about us */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.animate-twinkle {
+  animation: twinkle infinite;
+}

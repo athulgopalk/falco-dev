@@ -83,7 +83,7 @@ const PartnersWeTrust = () => {
         <p className="text-lg text-gray-50 mb-12 max-w-2xl mx-auto">
           We work with the best in the industry to bring you top-quality solutions.
         </p>
-        <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-12">
+        <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-12  " >
           {partners.length > 0 ? (
             partners.map((partner, index) => (
               <PartnerLogo
